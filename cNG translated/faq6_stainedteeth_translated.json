@@ -1,0 +1,76 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+    "type": "list",
+    "body": {
+      "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Dattin Hakora \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Me ke sa hakora tabo\n 2. Dalilin koffe\n 3. Shan taba/Miraa\n 4. Dabare dabare mai launin kasa{%else%}_[Q No. 2/2 ]_\nSelected Topic: Stained teeth\n\n Choose an option\n\n 1. Why yellow teeth\n 2. Yellowness of medicine\n 3. Yellowness lower teeth\n 4. Yellow spots {%endif%}"
+    },
+    "action": {
+      "button": "Click for Examples",
+      "sections": [
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dattin Hakora: 1{%else%}Stained Teeth: 1{%endif%}",
+          "rows": [
+            {
+              "id": "1",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Me ke sa hakora tabo{%else%}Why stained teeth{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora rawaya duk da tsaftacewa na yau da kullum{%else%}I brush my teeth daily but my teeth still have stains{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dattin Hakora: 2{%else%}Stained Teeth: 2{%endif%}",
+          "rows": [
+            {
+              "id": "2",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dalilin koffe{%else%}Due to coffee{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ina shan koffee/shayi hakora na suna da tabo{%else%}I take coffee/tea and my teeth are stained{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dattin Hakora: 3{%else%}Stained Teeth: 3{%endif%}",
+          "rows": [
+            {
+              "id": "3",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Shan taba/Miraa{%else%}Smoking/Miraa{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ina shan taba kuma hakorana sun lalace{%else%}I smoke and my teeth are stained{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dattin Hakora: 4{%else%}Stained Teeth: 4{%endif%}",
+          "rows": [
+            {
+              "id": "4",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Rawaya faci{%else%}Brown patches{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora na nagaba na da dabaren farin alli ko ruwan kasa{%else%}My front teeth have chalk white or brown patches{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "FAQ",
+          "rows": [
+            {
+              "id": "FAQ",
+              "title": "FAQ",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+          "rows": [
+            {
+              "id": "restart",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

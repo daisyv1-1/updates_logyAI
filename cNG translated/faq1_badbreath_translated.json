@@ -1,0 +1,67 @@
+{
+    "preview_url": true,
+    "to": "{{phone_number}}",
+    "type": "interactive",
+    "interactive": {
+      "type": "list",
+      "body": {
+        "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Warin baki \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Warin Bakin safiya\n 2. Warin baki bayan cin abinci\n 3. Yanay mara dadi{%else%}_[Q No. 2/2 ]_\nSelected Topic: Bad breath\n\n Choose an option\n\n 1. Morning bad breath.\n 2. Bad breath after food.\n 3. Bad Feeling.{%endif%}"
+      },
+      "action": {
+        "button": "Click for Examples",
+        "sections": [
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Warin Baki: 1{%else%}Bad Breath: 1{%endif%}",
+            "rows": [
+              {
+                "id": "1",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Warin Bakin Safiya{%else%}Morning Bad Breath{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Idan na farka da safe baki na yana yin wari{%else%}When I get up in the morning my mouth smells bad.{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Warin Baki: 2{%else%}Bad Breath: 2{%endif%}",
+            "rows": [
+              {
+                "id": "2",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Kamshi Bayan Abinci{%else%}Bad breath after food{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Baki na ya na wari idan na gama cin abinci{%else%}My mouth smells bad after eating{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Warin Baki: 3{%else%}Bad Breath: 3{%endif%}",
+            "rows": [
+              {
+                "id": "3",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Yanay mara dadi{%else%}Bad feeling{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Baki na yana wari kuma yana kunyata ni{%else%}My mouth smells bad and I feel embarrassed.{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "FAQ",
+            "rows": [
+              {
+                "id": "FAQ",
+                "title": "FAQ",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+            "rows": [
+              {
+                "id": "restart",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

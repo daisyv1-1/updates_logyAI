@@ -1,0 +1,76 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+    "type": "list",
+    "body": {
+      "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Bleeding Gums/Bakin Mai Jini \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. A yayin goge baki\n 2. Kunburaren jan dadashi\n 3. Ruwan gyambo\n 4. Dadashi mara dandano{%else%}_[Q No. 2/2 ]_\nSelected Topic: Bleeding gums\n\n Choose an option.\n\n 1. General Bleeding gums.\n 2. Reddish swollen gums.\n 3. Liquid pus.\n 4. Bad taste gums{%endif%}"
+    },
+    "action": {
+      "button": "Click for Examples",
+      "sections": [
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Bakin Mai Jini: 1{%else%}Bleeding gums: 1{%endif%}",
+          "rows": [
+            {
+              "id": "1",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}A yayin goge baki{%else%}General Bleeding gums{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dadashi na na yin jini idan ina goge baki{%else%}My gums bleed when I brush{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Bakin Mai Jini: 2{%else%}Bleeding gums: 2{%endif%}",
+          "rows": [
+            {
+              "id": "2",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Kumburi{%else%}Reddish swollen gums{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dadashi na sun kumbura kuma sun yi ja{%else%}My gums are swollen and red.{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Bakin Mai Jini: 3{%else%}Bleeding gums: 3{%endif%}",
+          "rows": [
+            {
+              "id": "3",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ruwan gyambo{%else%}Liquid pus{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ruwan gyambo na fitowa a baki na ta inda suka hadu da hakora{%else%}Liquid pus comes from my gums where they meet the teeth.{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Bakin Mai Jini: 4{%else%}Bleeding gums: 4{%endif%}",
+          "rows": [
+            {
+              "id": "4",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Dadashi mara dandano{%else%}Bad taste gums{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Baki ba dadi{%else%}Pressing my gums whitish liquid comes out & mouth tastes bad.{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "FAQ",
+          "rows": [
+            {
+              "id": "FAQ",
+              "title": "FAQ",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+          "rows": [
+            {
+              "id": "restart",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

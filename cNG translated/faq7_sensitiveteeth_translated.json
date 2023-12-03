@@ -1,0 +1,66 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+    "type": "list",
+    "body": {
+      "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Hakora masu zafi \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Abubuwan sanyi\n 2. Saboda magani\n 3. Tsami ko Gafi{%else%}_[Q No. 2/2 ]_\nSelected Topic: Sensitive teeth\n\n Choose an option.\n\n 1. Eating Cold items\n 2. Doubt of sensitivity\n 3. Eating Sour food.{%endif%}"
+    },
+    "action": {
+      "button": "Click for Examples",
+      "sections": [
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora masu zafi: 1{%else%}Sensitive teeth: 1{%endif%}",
+          "rows": [
+            {
+              "id": "1",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Abubuwan sanyi{%else%}Eating Cold items{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Idan ina cin/shan abu mai sanyi ba zato ba tsanmani sai ciwo mai kaifi .{%else%}Sudden or sharp pain in my teeth when eating/drinking something cold.{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora masu zafi: 2{%else%}Sensitive teeth: 2{%endif%}",
+          "rows": [
+            {
+              "id": "2",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Saboda magani{%else%}Doubt of sensitivity{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Alamun suna kama da labaran talabijin{%else%}I see TV information about teeth sensitivity, and I think I may have it.{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora masu zafi: 3{%else%}Sensitive teeth: 3{%endif%}",
+          "rows": [
+            {
+              "id": "3",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tsami ko Gafi{%else%}Eating Sour food{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Shan wani abu mai tsami ko gafi.{%else%}I have a sharp pain when eating/drinking something sour or acidic.{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "FAQ",
+          "rows": [
+            {
+              "id": "FAQ",
+              "title": "FAQ",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+          "rows": [
+            {
+              "id": "restart",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

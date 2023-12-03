@@ -1,0 +1,77 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+    "type": "list",
+    "body": {
+      "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Amfani da gishiri & gawayi \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Goge baki da Aswaki\n 2. Sinadarin  goge baki na ruwa\n 3. Mahinmmanci \n 4. Man goge baki da gishiri {%else%}_[Q No. 2/2 ]_\nSelected Topic: salt and charcoal\n\n Choose an option.\n\n 1. Brushing with sticks\n 2. Using mouthwash only\n 3. Benefit of using Colgate\n 4. Toothpaste or salt{%endif%}"
+    },
+    "action": {
+      "button": "Click for Examples",
+      "sections": [
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Gishiri & kwal: 1{%else%}Salt and charcoal: 1{%endif%}",
+          "rows": [
+            {
+              "id": "1",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Goge baki da Aswaki{%else%}Brushing with sticks{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Shin goge  baki da akwaki kadai ya isa?{%else%}Is using a stick to clean my teeth enough?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Gishiri & kwal: 2{%else%}Salt and charcoal: 2{%endif%}",
+          "rows": [
+            {
+              "id": "2",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Wanke baki{%else%}Using mouthwash only{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Shin zan iya amfani da ruwan goge baki kadai{%else%}Can I use mouthwash only{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Gishiri & kwal: 3{%else%}Salt and charcoal: 3{%endif%}",
+          "rows": [
+            {
+              "id": "3",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Mahinmmanci{%else%}Benefit of using Colgate{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Mahinmmancin amfani da Cilgate maimakon gawayi{%else%}Benefit of using Colgate instead of using charcoal?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Gishiri & kwal: 4{%else%}Salt and charcoal: 4{%endif%}",
+          "rows": [
+            {
+              "id": "4",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Gishiri ya fi kyau?{%else%}Toothpaste or salt{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Shin yin amafani da man goge baki yafi amfani da gishiri?{%else%}Is using toothpaste better than using salt?{%endif%}"
+            }
+          ]
+        },
+        {
+            "title": "FAQ",
+            "rows": [
+              {
+                "id": "FAQ",
+                "title": "FAQ",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+            "rows": [
+              {
+                "id": "restart",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

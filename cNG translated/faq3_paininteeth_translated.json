@@ -1,0 +1,87 @@
+{
+    "preview_url": true,
+    "to": "{{phone_number}}",
+    "type": "interactive",
+    "interactive": {
+      "type": "list",
+      "body": {
+        "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Ciwon hakori \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Haƙori mai saurin daukar ciwo\n 2. Ciwo a yayin goge baki\n 3. Ciwo a yayin cin abinci\n 4. Ciwon taunar hakori\n 5. Ciwon hakori mai yaduwa{%else%}_[Q No. 2/2 ]_\nSelected Topic: Pain in teeth\n\n Choose an option.\n\n 1.Tooth sensitivity.\n 2. Pain during brushing.\n 3. Pain while eating.\n 4. Teeth grinding pain.\n 5. Spreading teeth pain.{%endif%}"
+      },
+      "action": {
+        "button": "Click for Examples",
+        "sections": [
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwon hakori: 1{%else%}Pain in teeth: 1{%endif%}",
+            "rows": [
+              {
+                "id": "1",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Mai saurin ciwo{%else%}Tooth sensitivity{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwo bayan abinci mai zafi ko sanyi{%else%}Pain after hot or cold food.{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwon hakori: 2{%else%}Pain in teeth: 2{%endif%}",
+            "rows": [
+              {
+                "id": "2",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}A lokacin goga{%else%}Pain during brushing{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwo a cikin hakori da mukamuki a yayin goge baki{%else%}Pain in my teeth and jaws while brushing{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwon hakori: 3{%else%}Pain in teeth: 3{%endif%}",
+            "rows": [
+              {
+                "id": "3",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Yayin cin abinci{%else%}Pain while eating{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwo a yayin cin abinci{%else%}Pain while eating{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwon hakori: 4{%else%}Pain in teeth: 4{%endif%}",
+            "rows": [
+              {
+                "id": "4",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwon taunar hakori{%else%}Teeth grinding pain{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwo idan hakoran sama da kasa suka hadu{%else%}Pain when my top and bottom teeth touch{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwon hakori: 5{%else%}Pain in teeth: 5{%endif%}",
+            "rows": [
+              {
+                "id": "5",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwo mai yaduwa{%else%}Spreading teeth pain{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ciwo a cikin hakor nai da mukamaki da ke yaduwa zuwa kai, kunne, kafada{%else%}Pain in my teeth &  jaw which spreads to my head, ear, shoulder.{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "FAQ",
+            "rows": [
+              {
+                "id": "FAQ",
+                "title": "FAQ",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+              }
+            ]
+          },
+          {
+            "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+            "rows": [
+              {
+                "id": "Restart",
+                "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+                "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

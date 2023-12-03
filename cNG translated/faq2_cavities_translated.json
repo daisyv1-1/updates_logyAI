@@ -1,0 +1,66 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+      "type": "list",
+      "body": {
+          "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Rushewar Haƙori \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Bakaken tabo\n 2. Makale Abinci\n 3. Hakora masu launin Ja da Baki{%else%}_[Q No. 2/2 ]_\nSelected Topic: Cavities/tooth decay \n\n Choose an option\n\n 1. Black spots\n 2. Food stuck in teeth.\n 3. Red & black teeth\n{%endif%}"
+      },
+      "action": {
+          "button": "Click for Examples",
+          "sections": [
+              {
+                  "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Rushewar Haƙori: 1{%else%}Cavities/tooth decay: 1{%endif%}",
+                  "rows": [
+                      {
+                          "id": "1",
+                          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Bakaken tabo{%else%}Black spots{%endif%}",
+                          "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Akwai bakaken tabo akan hakora na kuma abinci yana makalewa akai{%else%}There are black spots on my teeth and food gets stuck there.{%endif%}"
+                      }
+                  ]
+              },
+              {
+                  "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Rushewar Haƙori: 2{%else%}Cavities/tooth decay: 2{%endif%}",
+                  "rows": [
+                      {
+                          "id": "2",
+                          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Makale Abinci{%else%}Food stuck in teeth{%endif%}",
+                          "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Duk lokacin da na ci abinci sai ya makale a tsakanin hakorana{%else%}Whenever I eat food it gets stuck in between my teeth{%endif%}"
+                      }
+                  ]
+              },
+              {
+                  "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Rushewar Haƙori: 3{%else%}Cavities/tooth decay: 3{%endif%}",
+                  "rows": [
+                      {
+                          "id": "3",
+                          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ja & baki hakora{%else%}Red & black teeth{%endif%}",
+                          "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakorana suna canza launi zuwa ja/baki{%else%}My front teeth are turning red/black in the past few days and weeks{%endif%}"
+                      }
+                  ]
+              },
+              {
+                  "title": "FAQ",
+                  "rows": [
+                      {
+                          "id": "FAQ",
+                          "title": "FAQ",
+                          "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+                      }
+                  ]
+              },
+              {
+                  "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+                  "rows": [
+                      {
+                          "id": "restart",
+                          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+                          "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

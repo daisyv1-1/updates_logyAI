@@ -1,0 +1,76 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+    "type": "list",
+    "body": {
+      "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Iyaye da Yara \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Hakoran yara\n 2. Goge hakoran yara\n 3. Goge hakoran Jarirai \n 4. Hakori sako-sako {%else%}_[Q No. 2/2 ]_\nSelected Topic: Mothers and children\n\n Choose the queries listed below ⬇️, to get the oral tips.\n\n 1. Baby teething\n 2. Brushing kid's teeth\n 3. Brushing baby's teeth\n 4. Loose tooth{%endif%}"
+    },
+    "action": {
+      "button": "Click for Examples",
+      "sections": [
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Iyaye da Yara: 1{%else%}Mothers and children: 1{%endif%}",
+          "rows": [
+            {
+              "id": "1",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakoran yara{%else%}Baby teething{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Yaro na ya fara hakora -me zan iya yi?{%else%}My baby is teething -what can I do?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Iyaye da Yara: 2{%else%}Mothers and children: 2{%endif%}",
+          "rows": [
+            {
+              "id": "2",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Goge hakoran yara{%else%}Brushing kid's teeth{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Yaya zan goge hakoran yarana?{%else%}How do I brush my kid's teeth?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Iyaye da Yara: 3{%else%}Mothers and children: 3{%endif%}",
+          "rows": [
+            {
+              "id": "3",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Goge hakoran Jarirai{%else%}Brushing baby's teeth{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Yaya zan goge hakoran yan yara?{%else%}How do I brush my baby's teeth?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Iyaye da Yara: 4{%else%}Mothers and children: 4{%endif%}",
+          "rows": [
+            {
+              "id": "4",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakori sako-sako{%else%}Loose tooth{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakorin yaro na yayi  sako-sako - me zan iya yi?{%else%}My child has a loose tooth - what can I do?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "FAQ",
+          "rows": [
+            {
+              "id": "FAQ",
+              "title": "FAQ",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+          "rows": [
+            {
+              "id": "restart",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

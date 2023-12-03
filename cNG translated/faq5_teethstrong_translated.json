@@ -1,0 +1,76 @@
+{
+  "preview_url": true,
+  "to": "{{phone_number}}",
+  "type": "interactive",
+  "interactive": {
+    "type": "list",
+    "body": {
+      "text": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}_[Q No. 2/2 ]_\nBatutuwan da aka zaba: Hakora Masu Karfi \nZaɓi tambayoyin cikin jerin da ke ƙasa, don samun shawarwarin kula da baki\n\n 1. Hakora masu kwari\n 2. Baki mai Lafiya\n 3. Shawarar Goge baki\n 4. Wane man goge baki{%else%}_[Q No. 2/2 ]_\nSelected Topic: Keeping teeth strong\n\n Choose an option\n\n 1. Strong teeth\n 2. Healthy mouth\n 3. Brushing advice\n 4. Which toothpaste to use{%endif%}"
+    },
+    "action": {
+      "button": "Click for Examples",
+      "sections": [
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora Masu Karfi: 1{%else%}Keeping teeth strong: 1{%endif%}",
+          "rows": [
+            {
+              "id": "1",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora masu kwari{%else%}Strong teeth{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ta ya zan samu hakora masu kwari?{%else%}How can I have strong teeth?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora Masu Karfi: 2{%else%}Keeping teeth strong: 2{%endif%}",
+          "rows": [
+            {
+              "id": "2",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Baki mai Lafiya{%else%}Healthy mouth{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Ta yaya zan samu baki mai lafiya?{%else%}How can I have a healthy mouth?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora Masu Karfi: 3{%else%}Keeping teeth strong: 3{%endif%}",
+          "rows": [
+            {
+              "id": "3",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Shawarar Goge baki{%else%}Brushing advice{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sau nawa ya kamata in goge baki kuma yaya zan goge baki?{%else%}How many times should I brush and how do I brush my teeth?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Hakora Masu Karfi: 4{%else%}Keeping teeth strong: 4{%endif%}",
+          "rows": [
+            {
+              "id": "4",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Wane man goge baki{%else%}Which toothpaste to use{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Wane man goge baki ya kamata in yi amfani dashi domin goge baki na?{%else%}Which toothpaste should I use to clean my teeth?{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "FAQ",
+          "rows": [
+            {
+              "id": "FAQ",
+              "title": "FAQ",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Tambayoyin da a ka cika tambaya{%else%}FAQ{%endif%}"
+            }
+          ]
+        },
+        {
+          "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}",
+          "rows": [
+            {
+              "id": "Restart",
+              "title": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Babban Jerin{%else%}Go to Main Menu{%endif%}",
+              "description": "{% if colgate_ng_language_options == 'Others' and colgate_ng_other_language == '1' %}Sake farawa{%else%}Restart{%endif%}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
